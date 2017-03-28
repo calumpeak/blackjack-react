@@ -43,7 +43,6 @@ class BlackJack extends Component {
     }
 
     winLose () {
-        const playing = this.isPlaying ();
         const { status } = this.props;
 
         switch (status) {

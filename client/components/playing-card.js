@@ -2,7 +2,7 @@
 
 import 'styles/playing-card.css';
 
-import React from 'react';
+import React, { PropTypes } from 'react';
 import Paper from 'material-ui/Paper';
 
 const suitMap = {
@@ -21,5 +21,10 @@ const PlayingCard = ({ suit, rank }) => (
     </Paper>
 
 );
+
+PlayingCard.propTypes = {
+    suit: PropTypes.string,
+    rank: PropTypes.string
+};
 
 export default PlayingCard;
